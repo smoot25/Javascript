@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro_java</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; 객체 데이터 &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p>객체.데이터 : </p>
+            <p>객체.기능() : </p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; 콘솔 출력과 자료형 &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p>window.console &nbsp;&nbsp; or &nbsp;&nbsp; console</p>
+            <p>개발자 도구가 아닌 제작 환경에서 자바스크립트를 사용할 수 있게 만들어 줌.</p>
+            <br>
+            <p>
+                자바에서 데이터표현시, 사용되는 형식을 자료형이라고 한다.
+                <ul>
+                    <li>숫자</li>
+                    <li>문자열</li>
+                    <li>불리언</li>
+                    <li>다양한 목적과 형태의 객체</li>
+                    <li><h3>console.log()</h3></li>
+                </ul>
+            </p>
+        </div>
+    </fieldset>
+    
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; 변수와 상수 &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p>[ let 변수이름; ] : 변수선언</p>
+            <p>[ 변수이름 = 데이터; ] : 변수 초기화</p>
+            <p>[ const 상수이름 = 데이터; ] : 변하지 않는값으로 지정.</p>
+            <p> 변수는 변하는 값 상수는 변하지 않는 것.</p>
+            <p> 상수에 변수 데이터 입력시 에러 발생함. ( 상수는 변하지 않는 값이기 때문 )</p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; 문자열 prompt &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p> let string1 = '문자열에는 기호가 들어간다'</p>
+            <p> let string = '12345...?'</p>
+            <p> 문자열을 더하여 더 긴 문자열로 바꾸는 것도 가능</p>
+            <p> [ prompt("문자열"); ] = 다이얼로그 박스에 띄울 메세지를 문자열로 등록가능.</p>
+            <p> const data = prompt() >>> 사용자 입력 >>> const data = "사용자 입력 내용"</p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; 템플릿 리터럴 &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p> const str3 = `백틱` </p>
+            <p> 변수를 문자열으로 삽입하여 문자열 취급도 가능 : ${변수} </p>
+            <p> prompt 반환값도 ${prompt=''}를 이용하여 문자열 취급 가능. </p>
+            <p> ` 기호를 사용하지 않으며 ${변수} 기능도 적요되지 않음. </p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; unfined 외 &nbsp;&nbsp;</h3></legend>
+        <div>
+            <p> null : 데이터가 없다는 것을 선언 </p>
+            <p> undefind : 아직 값이 정의되지 않은 상태 </p>
+            <p> boolean : True or False </p>
+            <p> confirm : 사용자가 확인과 취소중 하나를 선택. 선택에 따라 true or false</p>
+        </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><h3> &nbsp;&nbsp; DOM &nbsp;&nbsp;</h3></legend>
+        <div>
+            <ul>
+                <li> 렌더링의 순서 </li>
+                    <ol>
+                        <li> HTML을 로드 </li>
+                        <li> 그 내부 구조에 DOM을 형성 </li>
+                        <li> 형성한 DOM을 기반으로 화면을 제작 </li>
+                    </ol>
+                <li> DOM : 문서 객체 모델 </li>
+                <li> DOM은 웹 콘텐츠 추가, 수정, 삭제 와 마우스, 키보드를 통한 이벤트 처리를 담당함.</li>
+                <li> document : DOM에 대한 접근을 할 수 있게하는 진입접이 됨.  </li>
+                <li> querySelector :  선택자를 인자로 전달받고 일치하는 문서내의 첫번째 요소 반환</li>
+                <li> textContnet : 해당 요소가 포함한 내용을 확인하고 수정 가능하다.</li>
+            </ul>
+
+        </div>
+    </fieldset>
+
+    <script src="intro_java.js" defer></script>
+</body>
+</html>
