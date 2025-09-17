@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 입력받기</title>
+    <style>
+        #fruit{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="name"></h2>
+    <p id="age"></p>
+    <p id="animal"></p>
+    <p id="fruit"></p>
+
+    <script>
+
+        const nameElement = document.querySelector('#name')
+        let name = prompt('당신의 이름은 무엇입니까?')
+        nameElement.textContent = name
+
+        const ageElement = document.querySelector('#age')
+        let age = prompt('당신의 나이는 몇 살입니까?')
+        ageElement.textContent = `나이는 ${age}세 입니다.`
+
+        document.querySelector('#animal').textContent
+        = `좋아하는 동물은 ${prompt('좋아하는 동물은 무엇입니까?')}입니다.`
+
+        document.querySelector('#fruit').textContent
+        = `좋아하는 과일은 ${prompt('좋아하는 과일은 무엇입니까?')}입니다.`
+
+
+    </script>
+</body>
+</html>
