@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java03_2</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+
+        console.log(createParagraph('첫 문장을 작성중', 'red'))
+        console.log(createParagraph('두번째 문장을 작성중', 'green'))
+        console.log(createParagraph('마지막 문장을 작성중', 'blue'))
+
+        function createParagraph(content, color){
+        const p = document.createElement('p')
+        p.style.color = color
+        p.textContent = '새로운 컨텐츠!'
+        document.querySelector('#container').append(p)
+
+        return `방금 만든 태그의 콘텐츠 : ${content}, 색상:${color}`
+        }
+
+    </script>
+</body>
+</html>

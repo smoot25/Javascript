@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <div id = 'container'></div>
+</body>
+
+<script>
+    createParagraph()
+    createParagraph()
+    createParagraph()
+    createParagraph()
+    createParagraph()
+
+    function createParagraph(){
+        const p = document.createElement('p')
+        p.textContent = '새로운 컨텐츠!'
+        document.querySelector('#container').append(p)
+    }
+
+    /*
+    // 호이스팅 가능 : 함수 만드는 부분이 호출보다 아래에 있어도됌.
+    sayYes()
+    // 호이스팅 불가
+    sayNo()
+    */
+
+    // 함수의 이름은 동사를 사용할것.
+
+    function sayYes(){
+        console.log(1)
+        console.log(2)
+        alert('YES!!')
+    }
+
+    const sayNo=function(){
+        console('no!')
+        console.log(3)
+    }
+
+</script>
+</html>
